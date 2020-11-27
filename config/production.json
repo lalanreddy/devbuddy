@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://lalan:lalan@16@buddy.d7ahv.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtSecret": "secret",
+  "githubClientId": "0513d16e875b47598e3d",
+  "githubSecret": "6f6b099edeb5c7b72f6841b6dcd69ac9919d6cf0"
+}
