@@ -4,15 +4,12 @@ const db = config.get("mongoURI");
 
 const connectDB = () => {
   mongoose
-    .connect(
-      "mongodb+srv://lalan:lalan@16@buddy.d7ahv.mongodb.net/<dbname>?retryWrites=true&w=majority",
-      {
-        useNewUrlParser: true,
-        useCreateIndex: true,
-        useFindAndModify: false,
-        useUnifiedTopology: true,
-      }
-    )
+    .connect(db, {
+      useNewUrlParser: true,
+      useCreateIndex: true,
+      useFindAndModify: false,
+      useUnifiedTopology: true,
+    })
     .then(() => console.log("MongoDB Connected"))
     .catch((err) => {
       console.error(err.message);
