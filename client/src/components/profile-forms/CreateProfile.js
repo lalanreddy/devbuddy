@@ -39,7 +39,7 @@ const CreateProfile = ({ createProfile, history }) => {
       <form className="form" onSubmit={(e) => onSubmit(e)}>
         <div className="form-group">
           <select name="status" value={status} onChange={(e) => onChange(e)}>
-            <option> Status</option>
+            <option>* Status</option>
             <option value="Junior Developer">Junior Developer</option>
             <option value="Senior Developer">Senior Developer</option>
           </select>
@@ -74,7 +74,7 @@ const CreateProfile = ({ createProfile, history }) => {
         <div className="form-group">
           <input
             type="text"
-            placeholder="Skills"
+            placeholder="* Skills"
             name="skills"
             value={skills}
             onChange={onChange}
